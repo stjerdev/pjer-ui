@@ -1,0 +1,62 @@
+{
+    "name": "pjer-ui",
+    "version": "1.0.2",
+    "description": "UI Components - P.J - E.R",
+    "files": [
+        "*.md",
+        "lib",
+        "esm",
+        "src"
+    ],
+    "main": "lib/index",
+    "module": "esm/index.js",
+    "sideEffects": false,
+    "authors": [
+        "Lucas Canavesio"
+    ],
+    "repository": "https://github.com/stjerdev/pjer-ui",
+    "homepage": "https://github.com/stjerdev",
+    "bugs": "https://github.com/stjerdev/pjer-ui/issues",
+    "license": "MIT",
+    "scripts": {
+        "build": "yarn run build-cjs && yarn run build-esm",
+        "build-cjs": "rimraf ./lib && tsc",
+        "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+        "watch": "tsc --outDir esm --module es2015 --watch"
+    },
+    "devDependencies": {
+        "@jsonforms/core": "~2.5.2",
+        "@jsonforms/material-renderers": "~2.5.2",
+        "@jsonforms/react": "~2.5.2",
+        "@material-ui/core": "^4.12.3",
+        "@material-ui/icons": "^4.11.2",
+        "@material-ui/styles": "^4.11.4",
+        "@react-keycloak/ssr": "^3.3.0",
+        "keycloak-js": "^15.0.2",
+        "next": "^12.0.2",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-redux": "^7.2.1",
+        "redux": "^4.0.5",
+        "redux-devtools-extension": "^2.13.8",
+        "rimraf": "^2.6.3"
+    },
+    "peerDependencies": {
+        "@jsonforms/core": "~2.5.2",
+        "@jsonforms/material-renderers": "~2.5.2",
+        "@jsonforms/react": "~2.5.2",
+        "@material-ui/core": "^4.12.3",
+        "@material-ui/icons": "^4.11.2",
+        "@material-ui/styles": "^4.11.4",
+        "@react-keycloak/ssr": "^3.3.0",
+        "keycloak-js": "^15.0.2",
+        "next": "^12.0.2",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-redux": "^7.2.1",
+        "redux": "^4.0.5",
+        "redux-devtools-extension": "^2.13.8"
+    },
+    "dependencies": {},
+    "author": "Lucas Canavesio"
+}
