@@ -23,7 +23,7 @@ type TFuseNavBadge = {
   fg: string
 }
 
-function FuseNavBadge(props: TFuseNavBadge) {
+function CustomNavBadge(props: TFuseNavBadge) {
   const { title, bg, fg } = props
   const classes = useStyles(props)
 
@@ -40,6 +40,6 @@ function FuseNavBadge(props: TFuseNavBadge) {
   )
 }
 
-FuseNavBadge.defaultProps = {}
+CustomNavBadge.defaultProps = {}
 
-export default memo(FuseNavBadge)
+export default memo(CustomNavBadge)

@@ -11,7 +11,7 @@ import clsx from 'clsx'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import FuseNavBadge from '../theme/@fuse/core/FuseNavigation/FuseNavBadge'
+import CustomNavBadge from '../theme/Badge/core/FuseNavigation/CustomNavBadge'
 import MenuItemComponent from './MenuItemComponent'
 
 // React runtime PropTypes
@@ -170,7 +170,7 @@ const MenuItem: React.FC<MenuItemProps> = (props) => {
           inset={!Icon}
         />
         {!colapsado && badge && (
-          <FuseNavBadge title={badge.title} bg={badge.gb} fg={badge.fg} />
+          <CustomNavBadge title={badge.title} bg={badge.gb} fg={badge.fg} />
         )}
         {/* Display the expand menu if the item has children */}
         {isExpandable && !open && !colapsado && <IconExpandMore />}
