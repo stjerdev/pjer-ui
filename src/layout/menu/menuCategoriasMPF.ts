@@ -11,8 +11,8 @@ import PersonIcon from "@material-ui/icons/Person"
 import SettingsIcon from "@material-ui/icons/Settings"
 import WorkIcon from "@material-ui/icons/Work"
 import FolderIcon from "@material-ui/icons/Folder"
-import { fuseReactLatestVersion } from "../theme/main/documentation/changelog/ChangelogDoc"
 import HistoryIcon from "@material-ui/icons/History"
+import { fuseReactLatestVersion } from "../theme/main/documentation/changelog/ChangelogDoc"
 
 type Props = {
   agendaNavIcon: any;
